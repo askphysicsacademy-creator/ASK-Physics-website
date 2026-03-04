@@ -6,224 +6,206 @@
 <title>Physics Academy | Online & Offline Classes</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
-}
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background-color: #f4f6f9;
+        color: #333;
+    }
 
-/* HERO SECTION */
-.hero {
-    position: relative;
-    height: 90vh;
-    background: linear-gradient(rgba(13,44,108,0.85), rgba(13,44,108,0.85)),
-                url('banner.jpg') center/cover no-repeat;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-}
+    header {
+        background: linear-gradient(135deg, #0D2C6C, #1e4fa3);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+    }
 
-.hero-content img {
-    width: 130px;
-    margin-bottom: 20px;
-}
+    header img {
+        width: 120px;
+        margin-bottom: 15px;
+    }
 
-.hero h1 {
-    font-size: 42px;
-    margin: 10px 0;
-}
+    h1 {
+        margin: 10px 0;
+        font-size: 36px;
+    }
 
-.hero .tagline {
-    font-size: 20px;
-    color: #F4B400;
-    margin-bottom: 10px;
-}
+    .tagline {
+        font-size: 20px;
+        color: #F4B400;
+        margin-bottom: 10px;
+    }
 
-.hero p {
-    font-size: 18px;
-}
+    .subtext {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
 
-.btn {
-    display: inline-block;
-    padding: 12px 28px;
-    margin: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        margin: 10px 5px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
 
-.btn-primary {
-    background-color: #F4B400;
-    color: black;
-}
+    .btn-primary {
+        background-color: #F4B400;
+        color: #000;
+    }
 
-.btn-secondary {
-    background-color: white;
-    color: #0D2C6C;
-}
+    .btn-secondary {
+        background-color: white;
+        color: #0D2C6C;
+    }
 
-/* SECTION */
-section {
-    padding: 60px 20px;
-    text-align: center;
-}
+    section {
+        padding: 50px 20px;
+        text-align: center;
+    }
 
-.section-title {
-    font-size: 30px;
-    margin-bottom: 40px;
-    color: #0D2C6C;
-}
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+        color: #0D2C6C;
+    }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
-}
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
 
-.card {
-    background: white;
-    padding: 30px;
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-}
+    .card {
+        background: white;
+        padding: 25px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-.highlight {
-    background-color: #0D2C6C;
-    color: white;
-}
+    .highlight-section {
+        background-color: #0D2C6C;
+        color: white;
+    }
 
-.highlight h2 {
-    color: #F4B400;
-}
+    .highlight-section h2 {
+        color: #F4B400;
+    }
 
-/* CTA */
-.cta {
-    background-color: #F4B400;
-    padding: 40px 20px;
-    font-size: 22px;
-    font-weight: bold;
-}
+    .cta {
+        background-color: #F4B400;
+        padding: 30px 20px;
+        font-size: 22px;
+        font-weight: bold;
+    }
 
-/* CONTACT */
-.contact p {
-    font-size: 18px;
-}
+    footer {
+        background-color: #111;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
 
-/* FOOTER */
-footer {
-    background-color: #111;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    @media (max-width: 768px) {
+        .cards {
+            flex-direction: column;
+            align-items: center;
+        }
 
-/* WhatsApp Floating Button */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #25D366;
-    color: white;
-    padding: 15px 18px;
-    border-radius: 50%;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    .hero h1 { font-size: 30px; }
-    .cards { flex-direction: column; align-items: center; }
-}
+        h1 {
+            font-size: 28px;
+        }
+    }
 </style>
-</head>
 
+</head>
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <div class="hero-content">
-        <img src="IMG-20260301-WA0006.jpg" alt="Physics Academy Logo">
-        <h1>PHYSICS ACADEMY</h1>
-        <div class="tagline">Where Questions Shape Knowledge</div>
-        <p>Concept. Clarity. Confidence.</p>
-        <p>🎓 Online & Offline Classes Available</p>
-        <p>Free Demo Classes | Admissions Open</p>
+<!-- HERO SECTION -->
+<header>
+   <img src="IMG-20260301-WA0006.jpg" alt="Physics Academy Logo">
+    <h1>PHYSICS ACADEMY</h1>
+    <div class="tagline">Where Questions Shape Knowledge</div>
+    <div class="subtext">Concept. Clarity. Confidence.</div>
 
-        <a href="tel:8891560546" class="btn btn-primary">Call Now</a>
-        <a href="#contact" class="btn btn-secondary">Book Free Demo</a>
+    <div class="subtext">
+        🎓 Online & Offline Classes Available <br>
+        Free Demo Classes | Admissions Open – Limited Seats
     </div>
-</div>
 
-<!-- ABOUT -->
+    <a href="tel:8891560546" class="btn btn-primary">Call Now</a>
+    <a href="#contact" class="btn btn-secondary">Book Free Demo</a>
+</header>
+
+<!-- ABOUT SECTION -->
 <section>
-    <h2 class="section-title">Why Choose Physics Academy?</h2>
+    <h2 class="section-title">Why Physics Academy?</h2>
     <p>
-        We provide classroom coaching and live interactive online classes
-        for Class IX – XII (CBSE & State Board).
-        Our teaching focuses on conceptual clarity and strong numerical skills.
+        We provide both classroom coaching and live interactive online classes 
+        for students of Class IX to XII (CBSE & State Board).
+        Our focus is on strong conceptual understanding and numerical mastery.
     </p>
 </section>
 
-<!-- OFFERINGS -->
+<!-- CORE OFFERINGS -->
 <section>
-    <h2 class="section-title">Our Programs</h2>
+    <h2 class="section-title">Core Offerings</h2>
     <div class="cards">
         <div class="card">
             <h3>Comprehensive Coaching</h3>
-            <p>Class IX – XII<br>CBSE & State Board<br>Online & Offline</p>
+            <p>Class IX – XII (All Boards)<br>
+            Online & Offline Batches</p>
         </div>
 
         <div class="card">
-            <h3>Specialized XI & XII</h3>
-            <p>Practical & Viva Guidance<br>Board + Entrance Focus</p>
+            <h3>Specialized Support</h3>
+            <p>Class XI & XII<br>
+            Practical & Viva Guidance<br>
+            Board + Entrance Focus</p>
         </div>
 
         <div class="card">
             <h3>Academic Projects</h3>
-            <p>Plus Two, UG & PG Assistance<br>Online Support Available</p>
+            <p>Plus Two, UG & PG Assistance<br>
+            Online Guidance Available</p>
         </div>
     </div>
 </section>
 
-<!-- ONLINE OFFLINE -->
-<section class="highlight">
-    <h2>Flexible Learning Modes</h2>
+<!-- ONLINE & OFFLINE SECTION -->
+<section class="highlight-section">
+    <h2>Online & Offline Learning</h2>
     <p>
         ✔ Live Interactive Online Classes<br>
-        ✔ Small Batch Offline Classes<br>
+        ✔ Small Offline Batches<br>
         ✔ Regular Tests & Monitoring<br>
         ✔ Individual Attention<br>
         ✔ Safe & Focused Environment
     </p>
 </section>
 
-<!-- CTA -->
+<!-- CTA SECTION -->
 <section class="cta">
     Free Demo Classes Available – Register Today!
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
+<!-- CONTACT SECTION -->
+<section id="contact">
     <h2 class="section-title">Contact Us</h2>
     <p>
         📍 Kaniyapuram, Trivandrum<br>
-        📞 8891560546
+        📞 8891560546<br>
+        Admissions Open Now
     </p>
 </section>
 
+<!-- FOOTER -->
 <footer>
     © 2026 Physics Academy | All Rights Reserved
 </footer>
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/918891560546" class="whatsapp">💬</a>
 
 </body>
 </html>
